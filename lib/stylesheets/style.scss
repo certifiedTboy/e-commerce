@@ -1,0 +1,171 @@
+@import "./variables/variables";
+@import "./styleFunc/styleFunc";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+ 
+
+.header {
+    @include displayFlex(space-between);
+    padding: 20px;
+}
+
+.nav-link {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: $textColor;
+    font-weight: 500;
+    margin-left: 20px;
+    &:hover {
+        color:$textHoverColor ;
+    }
+}
+
+.nav-img {
+    margin-left: 20px;
+}
+
+
+// Hero / Intro Section Styling
+.hero-section {
+    background: radial-gradient($linkColor, #ffd6d6);
+    margin-top: -130px;
+    padding-top: 100px;
+    margin-bottom: 50px
+}
+
+.hero-container {
+    @include displayFlex(space-around);
+}
+
+.hero-text h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+
+}
+
+.btn {
+    background-color: $textHoverColor;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: $linkColor;
+    text-decoration: none;
+   &:hover {
+    background-color: #563434;
+   }
+}
+
+.link-div {
+    margin-top: 50px;
+}
+
+.hero-img{
+    filter: drop-shadow(10px 10px 10px $textColor)
+}
+
+// Production Section Styling
+.product-container {
+    @include displayFlex(space-around);
+    width: 90%;
+    margin: 20px auto;
+ 
+}
+
+.product-text {
+    text-align: center;
+    margin-bottom: 40px;
+    color: $textColor;
+}
+.product-item img {
+    width: 300px;
+}
+
+.product-item {
+    flex-grow: 1;
+    flex-basis: auto;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-link {
+    color: $textColor;
+    font-weight: 500;
+}
+
+// Footer Styling Section
+
+.footer-section{
+    margin-top: 100px;
+    background-color: #060606;
+    padding: 40px 40px;
+}
+
+.footer-container {
+    @include displayFlex(space-around);
+    align-items: center;
+    text-align: center;
+}
+
+
+.toggle-link {
+    display: none;
+}
+
+@media only screen and (max-width: 524px) {
+    .hide {
+        display: none !important;
+        
+    }
+
+    .nav-link {
+        display: block;
+        color: #fff !important;
+    }
+
+    .header {
+        background-color: #5a5a5a !important;
+      
+    }
+
+    .hero-section {
+        margin-top: 0px !important;
+        padding: 20px;
+    }
+    .hero-text h1{
+        font-size: 30px;
+        // margin-bottom: 20px;
+    
+    }
+
+    .toggle-link {
+        display: block;
+        color: #fff;
+        font-size: 25px;
+    }
+
+    .product-item img {
+        width: 100%;
+    }
+
+ 
+   
+}
+
+
+
+
+

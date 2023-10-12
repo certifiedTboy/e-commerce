@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.nav-link {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.nav-item a:hover {
+  color: #ff523b;
+}
+
+.nav-img {
+  margin-left: 20px;
+}
+
+.hero-section {
+  background: radial-gradient(#fff, #ffd6d6);
+  margin-top: -130px;
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #ff523b;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #563434;
+}
+
+.link-div {
+  margin-top: 50px;
+}
+
+.hero-img {
+  filter: drop-shadow(10px 10px 10px #555);
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.product-text {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.product-item img {
+  width: 300px;
+}
+
+.product-item {
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+}
+
+.product-link {
+  color: #555;
+  font-weight: 500;
+}
+
+.footer-section {
+  margin-top: 100px;
+  background-color: #060606;
+  padding: 40px 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.toggle-link {
+  display: none;
+}
+
+@media only screen and (max-width: 524px) {
+  .hide {
+    display: none !important;
+  }
+  .nav-link {
+    display: block;
+    color: #fff !important;
+  }
+  .header {
+    background-color: #5a5a5a !important;
+  }
+  .hero-section {
+    margin-top: 0px !important;
+    padding: 20px;
+  }
+  .hero-text h1 {
+    font-size: 30px;
+  }
+  .toggle-link {
+    display: block;
+    color: #fff;
+    font-size: 25px;
+  }
+  .product-item img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
